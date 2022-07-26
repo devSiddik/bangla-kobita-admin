@@ -1,0 +1,1136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: #ebecee; }
+
+h5, p, span, a, .btn, th, td, label {
+  font-size: 13px; }
+
+p {
+  margin-bottom: 0 !important; }
+
+.fa {
+  font-size: 16px; }
+
+h4 {
+  font-size: 24px; }
+
+h5 {
+  font-size: 18px; }
+
+::-webkit-input-placeholder {
+  font-size: 13px !important; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 3px; }
+
+::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+  border-radius: 5px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5e5e5; }
+
+.img-fluid {
+  width: -webkit-fill-available !important;
+  height: -webkit-fill-available !important; }
+
+.modal {
+  background: rgba(233, 233, 233, 0.5); }
+
+.modal-header {
+  align-items: center !important; }
+  .modal-header .close .fa {
+    color: #0EA61A; }
+  .modal-header .close:hover {
+    background: #fff;
+    border: none; }
+    .modal-header .close:hover .fa {
+      color: #45c2de; }
+
+.modal-footer .btn {
+  background: #45c2de;
+  border: 1px solid #45c2de;
+  border-radius: 3px;
+  transition: .4s;
+  color: #fff; }
+
+.modal-footer .btn:hover {
+  background: #fabd03;
+  border: 1px solid #fabd03;
+  color: #fff; }
+  .modal-footer .btn:hover .fa {
+    color: #fff; }
+
+table thead {
+  background: #dedfe1; }
+
+.table thead tr,
+.table thead th {
+  border: 1px solid #dedfe1; }
+
+.table th, .table td {
+  vertical-align: inherit; }
+
+.table td {
+  padding: 0.3rem .75rem; }
+
+.fa {
+  color: #fff;
+  transition: .4s; }
+
+.fa-green {
+  color: #0EA61A; }
+
+.btn {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  transition: .4s;
+  font-weight: 500;
+  padding: 12px 24px;
+  color: #fff; }
+
+.btn-yellow {
+  background: #fabd03;
+  border: 1px solid #fabd03;
+  color: #000; }
+  .btn-yellow .fa {
+    color: #000; }
+
+.btn-blue {
+  background: #45c2de;
+  border: 1px solid #45c2de; }
+
+.btn-green {
+  background: #0EA61A;
+  border: 1px solid #0EA61A; }
+
+.btn-1 {
+  background: #c64e2c;
+  border: 1px solid #c64e2c; }
+
+.btn-2 {
+  background: #048e03;
+  border: 1px solid #048e03; }
+
+.btn-3 {
+  background: #a01b3d;
+  border: 1px solid #a01b3d; }
+
+.btn-4 {
+  background: #048d9d;
+  border: 1px solid #048d9d; }
+
+.btn-5 {
+  background: #e69c1b;
+  border: 1px solid #e69c1b; }
+
+.btn-6 {
+  background: #2d7eda;
+  border: 1px solid #2d7eda; }
+
+.btn-7 {
+  background: #5638a9;
+  border: 1px solid #5638a9; }
+
+.btn-8 {
+  background: #444444;
+  border: 1px solid #444444; }
+
+.btn:hover {
+  background: #45c2de;
+  border: 1px solid #45c2de;
+  color: #fff; }
+  .btn:hover .fa {
+    color: #fff; }
+
+.fa-btn {
+  height: 39px;
+  width: 39px;
+  padding: 9px; }
+  .fa-btn .fa {
+    color: #0EA61A; }
+
+.fa-btn:hover {
+  background: #45c2de;
+  border: 1px solid #45c2de;
+  color: #fff; }
+  .fa-btn:hover .fa {
+    color: #fff; }
+
+.btn:focus {
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25); }
+
+.form-control {
+  font-size: 14px;
+  border: 1px solid #e3e3e3;
+  padding: 19px;
+  height: 39px; }
+
+.custom-select {
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #e3e3e3;
+  height: 39px; }
+  .custom-select a {
+    padding: 4px; }
+
+.custom-select:focus,
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #45c2de; }
+
+.custom-select input {
+  width: 97%; }
+
+.input-group .input-group-text {
+  background: #fff;
+  border-left: 0px; }
+  .input-group .input-group-text .fa {
+    color: #0EA61A; }
+
+#loginSection {
+  background: url(../img/splash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+  #loginSection .overlay {
+    position: relative;
+    height: 100vh; }
+  #loginSection .col {
+    position: relative;
+    height: 100vh; }
+  #loginSection .login-box .fa-hospital-o {
+    font-size: 50px;
+    color: #45c2de;
+    padding-top: 20px;
+    background: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px; }
+  #loginSection .login-box h3 {
+    color: #fff;
+    font-weight: 600;
+    margin: 20px 0; }
+  #loginSection .login-box form {
+    background: #fff;
+    box-shadow: 0px 0px 30px -15px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px; }
+    #loginSection .login-box form .input-group {
+      padding: 10px 15px; }
+      #loginSection .login-box form .input-group .form-control {
+        background: transparent;
+        color: #555;
+        font-weight: 500;
+        padding: 25px 15px;
+        font-size: 16px;
+        box-shadow: inset 0px 0px 20px -15px; }
+      #loginSection .login-box form .input-group .custom-select {
+        font-weight: 500;
+        height: 50px;
+        color: #555;
+        font-size: 16px;
+        background: #e9e9e9;
+        box-shadow: inset 0px 0px 20px -17px; }
+        #loginSection .login-box form .input-group .custom-select option {
+          font-size: 14px;
+          padding: 10px !important; }
+    #loginSection .login-box form .btn {
+      background: linear-gradient(180deg, #34b7e5 25%, #4bcbd8 75%);
+      margin-top: 10px;
+      padding: 10px 50px;
+      border-radius: 30px;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 0px;
+      transition: .4s; }
+    #loginSection .login-box form .btn:hover {
+      background: linear-gradient(180deg, #4bcbd8 25%, #34b7e5 75%);
+      color: #fff;
+      box-shadow: 0px 0px 30px -15px; }
+    #loginSection .login-box form ::-webkit-input-placeholder {
+      font-size: 16px !important;
+      color: #555; }
+
+/*========================================*/
+/*========================================*/
+/*========================================*/
+#mainSection {
+  position: fixed;
+  border-radius: 5px;
+  height: 100%;
+  /*========================================*/
+  /*========================================*/
+  /*========================================*/ }
+  #mainSection .col-xl-6 {
+    padding: 5px 0;
+    background: #ebecee;
+    border: 1px solid #ebecee;
+    height: 100vh; }
+  #mainSection .calculation-area {
+    height: 100%;
+    position: relative; }
+    #mainSection .calculation-area #editable-select {
+      border-radius: 3px; }
+    #mainSection .calculation-area option {
+      font-size: 14px; }
+  #mainSection .cart-table {
+    position: absolute;
+    top: 42px;
+    height: 95.5%;
+    width: 100%;
+    overflow-x: auto; }
+    #mainSection .cart-table .six-col tbody {
+      height: 596px; }
+    #mainSection .cart-table .six-col td {
+      vertical-align: baseline;
+      padding: 0.25rem .75rem;
+      border: none; }
+      #mainSection .cart-table .six-col td .form-control {
+        height: 30px;
+        padding: 5px;
+        width: 70px; }
+    #mainSection .cart-table .six-col .imposter {
+      position: absolute; }
+      #mainSection .cart-table .six-col .imposter td {
+        display: block;
+        height: 1px;
+        visibility: hidden; }
+    #mainSection .cart-table .six-col .inc-dec {
+      display: flex;
+      align-items: center;
+      position: relative; }
+      #mainSection .cart-table .six-col .inc-dec .form-control {
+        width: 41px;
+        border: none;
+        background: none;
+        padding: 0rem 0.75rem;
+        height: calc(0em + 0.75rem + 2px); }
+      #mainSection .cart-table .six-col .inc-dec .form-control:focus {
+        box-shadow: none; }
+      #mainSection .cart-table .six-col .inc-dec .btn {
+        color: #000; }
+      #mainSection .cart-table .six-col .inc-dec .form-group {
+        margin-bottom: 0;
+        background: #fff;
+        padding: 4px;
+        border-radius: 3px;
+        border: 1px solid #e3e3e3; }
+    #mainSection .cart-table .six-col .discount-none {
+      display: none; }
+    #mainSection .cart-table .six-col .packet-select {
+      width: 90px !important;
+      font-size: 13px;
+      background: #fff !important;
+      padding: 2px !important;
+      height: 28px !important;
+      cursor: pointer;
+      border: 1px solid #e3e3e3 !important;
+      position: relative;
+      top: 2px; }
+    #mainSection .cart-table .six-col .value-button {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      padding: 2px 7px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: .4s; }
+    #mainSection .cart-table .six-col .value-button:hover {
+      background: #45c2de;
+      border: 1px solid #45c2de;
+      color: #fff; }
+    #mainSection .cart-table .six-col .edit-btn {
+      display: flex; }
+      #mainSection .cart-table .six-col .edit-btn .fa-btn {
+        padding: 8px 12px; }
+      #mainSection .cart-table .six-col .edit-btn .fa-btn:first-child {
+        margin-right: 1px; }
+  #mainSection .final-calculation {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    background: #dedfe1;
+    overflow-x: auto; }
+    #mainSection .final-calculation table td {
+      vertical-align: baseline;
+      padding: 0.3rem .75rem;
+      border: none; }
+      #mainSection .final-calculation table td .form-control {
+        height: 30px;
+        padding: 5px;
+        width: 100px; }
+    #mainSection .final-calculation .mini-table td {
+      border-top: 0px; }
+      #mainSection .final-calculation .mini-table td .fa {
+        cursor: pointer; }
+      #mainSection .final-calculation .mini-table td .fa:hover {
+        cursor: pointer; }
+    #mainSection .final-calculation .patient-test-table {
+      position: relative;
+      width: 100%;
+      margin-bottom: 3px; }
+      #mainSection .final-calculation .patient-test-table .table {
+        margin-bottom: 0; }
+        #mainSection .final-calculation .patient-test-table .table thead {
+          display: table;
+          background: #223242;
+          color: #fff;
+          width: 100%;
+          table-layout: fixed; }
+          #mainSection .final-calculation .patient-test-table .table thead th {
+            width: 20%;
+            font-weight: 500;
+            font-size: 13px;
+            padding: 0.5rem .5rem;
+            border: 1px solid #223242;
+            border-bottom: none; }
+        #mainSection .final-calculation .patient-test-table .table tbody {
+          display: block;
+          min-height: 108px;
+          max-height: 216px;
+          overflow-y: auto;
+          width: 100%; }
+        #mainSection .final-calculation .patient-test-table .table .table-row {
+          display: inline-table;
+          width: 100%; }
+          #mainSection .final-calculation .patient-test-table .table .table-row td {
+            vertical-align: baseline;
+            padding: 0.5rem .75rem;
+            border: 1px solid #223242;
+            border-top: none;
+            color: #333;
+            font-size: 13px; }
+      #mainSection .final-calculation .patient-test-table .four-col th:first-child,
+      #mainSection .final-calculation .patient-test-table .four-col td:first-child {
+        width: 10% !important; }
+      #mainSection .final-calculation .patient-test-table .four-col th:nth-child(2),
+      #mainSection .final-calculation .patient-test-table .four-col td:nth-child(2) {
+        width: 55% !important; }
+      #mainSection .final-calculation .patient-test-table .four-col th:nth-child(3),
+      #mainSection .final-calculation .patient-test-table .four-col td:nth-child(3) {
+        width: 15% !important; }
+      #mainSection .final-calculation .patient-test-table .four-col th:nth-child(4),
+      #mainSection .final-calculation .patient-test-table .four-col td:nth-child(4) {
+        width: 20% !important; }
+    #mainSection .final-calculation .total-amount-area {
+      padding-right: 20px; }
+      #mainSection .final-calculation .total-amount-area input {
+        height: 30px;
+        padding: 5px;
+        width: 100px; }
+      #mainSection .final-calculation .total-amount-area .col-6 {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        justify-content: flex-end; }
+        #mainSection .final-calculation .total-amount-area .col-6 p {
+          width: 100px; }
+  #mainSection .calculator {
+    position: absolute;
+    bottom: 65px;
+    left: -15px;
+    z-index: 1;
+    width: 272px;
+    overflow: hidden;
+    margin: 20px;
+    padding: 3px;
+    display: inline-block;
+    background: #dedfe1;
+    border: 1px solid #a6d0e6;
+    border-radius: 5px; }
+    #mainSection .calculator .displayBox {
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      margin: 3px;
+      border-radius: 5px; }
+      #mainSection .calculator .displayBox p {
+        font-size: 24px;
+        font-weight: 500; }
+    #mainSection .calculator table td .btn {
+      background: #fff;
+      border: 1px solid #dedfe1;
+      font-size: 16px;
+      font-weight: 500;
+      color: #666;
+      border-radius: 5px;
+      width: 60px !important;
+      height: 50px !important;
+      margin: 3px !important;
+      cursor: pointer;
+      transition: .4s; }
+    #mainSection .calculator .btn:hover {
+      background: #45c2de;
+      border: 1px solid #45c2de;
+      color: #fff; }
+    #mainSection .calculator .equal {
+      position: relative; }
+      #mainSection .calculator .equal #equals {
+        position: absolute;
+        top: 0;
+        width: 126px !important; }
+  #mainSection .bottom-area-btns .btn {
+    width: 100%;
+    min-width: 80px;
+    margin: 0 1px;
+    padding: 12px 0;
+    height: 80px;
+    color: #fff; }
+    #mainSection .bottom-area-btns .btn .fa {
+      display: block;
+      color: #fff; }
+  #mainSection .bottom-area-btns .calculator-btn:hover,
+  #mainSection .bottom-area-btns .calculator-btn.active-btn {
+    color: #fff;
+    background: #45c2de;
+    border: 1px solid #45c2de; }
+  #mainSection .top-area-btns {
+    margin-bottom: 2px;
+    table-layout: fixed; }
+  #mainSection .right-part {
+    display: flex; }
+    #mainSection .right-part .btn {
+      width: 100%;
+      margin: 0 1px; }
+  #mainSection .show-on-mob {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px; }
+    #mainSection .show-on-mob .btn {
+      display: inline-block;
+      width: 100%;
+      margin: 0 1px; }
+    #mainSection .show-on-mob .btn.active-btn {
+      color: #fff;
+      background: #45c2de;
+      border: 1px solid #45c2de; }
+  #mainSection .product-area {
+    height: 95%;
+    overflow: hidden; }
+    #mainSection .product-area .form-control {
+      border-left: 0px; }
+    #mainSection .product-area .form-control:focus {
+      border: 1px solid #e3e3e3;
+      border-left: 0px; }
+  #mainSection .top-area {
+    display: flex;
+    margin-bottom: 2px; }
+    #mainSection .top-area .input-group {
+      width: 100%;
+      margin: 0 1px; }
+    #mainSection .top-area .edit-icon {
+      display: flex;
+      margin-left: auto; }
+      #mainSection .top-area .edit-icon .btn {
+        margin: 0 1px;
+        min-width: 40px; }
+      #mainSection .top-area .edit-icon .add-customer {
+        min-width: 100px;
+        background: #0EA61A;
+        border: 1px transparent;
+        height: 38px; }
+      #mainSection .top-area .edit-icon .add-customer:hover {
+        background: #45c2de; }
+      #mainSection .top-area .edit-icon .input-group {
+        min-width: 100px; }
+    #mainSection .top-area .input-group-text {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-right: 0px;
+      padding-right: 0; }
+  #mainSection .mob-btns {
+    margin: 1px 1px 2px 1px; }
+    #mainSection .mob-btns .btn {
+      width: 100px;
+      padding: 12px 8px; }
+    #mainSection .mob-btns .btn.active-btn {
+      color: #fff;
+      background: #45c2de;
+      border: 1px solid #45c2de; }
+  #mainSection .accesories {
+    display: inline-flex;
+    height: 100%;
+    margin-top: 2px; }
+  #mainSection .side-indicator {
+    width: calc(100% - 83%);
+    height: 100%;
+    padding-bottom: 8px;
+    overflow: auto;
+    margin-right: 1px; }
+    #mainSection .side-indicator .btn {
+      width: 100%;
+      margin: 1px 0;
+      padding: 12px 8px;
+      overflow: hidden;
+      font-weight: 500;
+      color: #000;
+      background: #fabd03;
+      border: 1px solid #fabd03; }
+    #mainSection .side-indicator .btn:hover,
+    #mainSection .side-indicator .btn.active-btn {
+      color: #fff;
+      background: #45c2de;
+      border: 1px solid #45c2de; }
+  #mainSection .item-area {
+    position: relative;
+    background: #fff;
+    width: calc(100% - 15%); }
+    #mainSection .item-area .item-top-area {
+      background: #ebecee;
+      z-index: 1;
+      width: 100%;
+      table-layout: fixed; }
+    #mainSection .item-area #posProduct {
+      height: 100%;
+      overflow: auto; }
+    #mainSection .item-area .item-area-box {
+      background: #fff;
+      padding-bottom: 49px;
+      overflow: auto; }
+      #mainSection .item-area .item-area-box .px-1 {
+        padding: 0rem !important;
+        padding: 0 1px !important; }
+    #mainSection .item-area .item-box {
+      min-width: 131px;
+      min-height: 226px;
+      margin: 2px 1px;
+      background: #dedfe1;
+      border: 1px solid #a6d0e6;
+      border-radius: 3px;
+      overflow: hidden;
+      cursor: pointer; }
+      #mainSection .item-area .item-box .img-box {
+        height: 156px; }
+        #mainSection .item-area .item-box .img-box img {
+          width: 100%; }
+      #mainSection .item-area .item-box .txt-box {
+        padding: 5px 10px; }
+      #mainSection .item-area .item-box .txt-box.item-name {
+        display: inline-block; }
+        #mainSection .item-area .item-box .txt-box.item-name span {
+          width: 200%;
+          text-align: center;
+          display: inline-flex;
+          transition: 2s; }
+    #mainSection .item-area .item-box:hover .txt-box.item-name span {
+      margin-left: -50%; }
+
+#mainSection .patient-info .header {
+  text-align: center;
+  background: #45c2de;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 2px; }
+
+#mainSection .patient-info form {
+  margin-top: 0px; }
+  #mainSection .patient-info form .form-group {
+    margin-bottom: 0px;
+    padding: 2px; }
+    #mainSection .patient-info form .form-group label {
+      display: block;
+      font-weight: 500; }
+    #mainSection .patient-info form .form-group .form-control {
+      height: 35px;
+      padding: 5px 10px; }
+    #mainSection .patient-info form .form-group .form-control::-webkit-input-placeholder {
+      font-size: 13px !important;
+      font-weight: 500;
+      color: #666; }
+    #mainSection .patient-info form .form-group select {
+      cursor: pointer;
+      padding: 5px !important;
+      font-size: 13px !important;
+      font-weight: 500;
+      color: #666; }
+    #mainSection .patient-info form .form-group .datepicker {
+      cursor: pointer; }
+
+.not-found {
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .not-found h3 {
+    margin-top: 15px; }
+  .not-found img {
+    width: 100%;
+    max-width: 400px;
+    margin: auto; }
+
+#alertBox .modal-header, #typeNoteBox .modal-header, #holdBox .modal-header {
+  border-bottom: none; }
+  #alertBox .modal-header h4, #typeNoteBox .modal-header h4, #holdBox .modal-header h4 {
+    margin: auto; }
+
+#alertBox .modal-footer, #typeNoteBox .modal-footer, #holdBox .modal-footer {
+  border-top: none; }
+  #alertBox .modal-footer .btn, #typeNoteBox .modal-footer .btn, #holdBox .modal-footer .btn {
+    width: 100px; }
+
+#paymentModal .modal-body .form-row {
+  justify-content: space-between; }
+
+#paymentModal .modal-body .part1 p span {
+  float: right; }
+
+#paymentModal .modal-body .part2 .form-group {
+  max-width: 150px; }
+
+#paymentModal .modal-body .part2 .form-control {
+  max-width: 140px;
+  height: 30px;
+  padding: 5px; }
+
+#paymentModal .modal-body .part2 .form-row.account {
+  margin: 0px;
+  align-items: center; }
+  #paymentModal .modal-body .part2 .form-row.account select {
+    float: right;
+    margin-left: auto;
+    display: inline-block; }
+
+#productBox .form-check {
+  margin-bottom: 20px; }
+
+#productBox .form-row .form-group input {
+  height: 30px;
+  padding: 5px; }
+
+#productBox .form-row .quantity {
+  align-items: center; }
+  #productBox .form-row .quantity input {
+    width: 50% !important;
+    margin-right: 2px; }
+  #productBox .form-row .quantity select {
+    margin-left: 3px;
+    width: 50% !important;
+    font-size: 13px;
+    background: #fff !important;
+    padding: 2px !important;
+    height: 30px !important;
+    cursor: pointer;
+    border: 1px solid #e3e3e3 !important; }
+
+#productBox .label-input-inline .form-group {
+  display: flex;
+  align-items: baseline; }
+  #productBox .label-input-inline .form-group label {
+    width: 45%; }
+
+#holdSaleModal thead th,
+#allSaleModal thead th {
+  padding: 5px 10px; }
+
+#holdSaleModal tr td,
+#allSaleModal tr td {
+  border: none; }
+
+#holdSaleModal tbody tr,
+#allSaleModal tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+
+#holdSaleModal .hold-sale-table,
+#allSaleModal .hold-sale-table {
+  position: relative;
+  overflow: hidden; }
+  #holdSaleModal .hold-sale-table thead,
+  #allSaleModal .hold-sale-table thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    #holdSaleModal .hold-sale-table thead tr th:nth-child(1),
+    #allSaleModal .hold-sale-table thead tr th:nth-child(1) {
+      width: 15%; }
+  #holdSaleModal .hold-sale-table .table01 tbody,
+  #allSaleModal .hold-sale-table .table01 tbody {
+    display: block;
+    height: 360px;
+    overflow: auto; }
+  #holdSaleModal .hold-sale-table .table01 tr td:nth-child(1),
+  #holdSaleModal .hold-sale-table .table01 tr th:nth-child(1),
+  #allSaleModal .hold-sale-table .table01 tr td:nth-child(1),
+  #allSaleModal .hold-sale-table .table01 tr th:nth-child(1) {
+    width: 10%; }
+  #holdSaleModal .hold-sale-table .table01 tr td:nth-child(2),
+  #holdSaleModal .hold-sale-table .table01 tr th:nth-child(2),
+  #allSaleModal .hold-sale-table .table01 tr td:nth-child(2),
+  #allSaleModal .hold-sale-table .table01 tr th:nth-child(2) {
+    width: 55%; }
+  #holdSaleModal .hold-sale-table .table01 tr td:nth-child(3),
+  #holdSaleModal .hold-sale-table .table01 tr th:nth-child(3),
+  #allSaleModal .hold-sale-table .table01 tr td:nth-child(3),
+  #allSaleModal .hold-sale-table .table01 tr th:nth-child(3) {
+    width: 35%; }
+
+#holdSaleModal .hold-sale-details,
+#allSaleModal .hold-sale-details {
+  position: relative;
+  overflow: hidden; }
+  #holdSaleModal .hold-sale-details thead,
+  #allSaleModal .hold-sale-details thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+  #holdSaleModal .hold-sale-details .table02 tbody,
+  #allSaleModal .hold-sale-details .table02 tbody {
+    display: block;
+    height: 140px;
+    overflow: auto; }
+  #holdSaleModal .hold-sale-details .table02 tr td:nth-child(1),
+  #holdSaleModal .hold-sale-details .table02 tr th:nth-child(1),
+  #allSaleModal .hold-sale-details .table02 tr td:nth-child(1),
+  #allSaleModal .hold-sale-details .table02 tr th:nth-child(1) {
+    width: 30%; }
+  #holdSaleModal .hold-sale-details .sec-final-calculation,
+  #allSaleModal .hold-sale-details .sec-final-calculation {
+    background: #eaeef1;
+    border-radius: 5px; }
+    #holdSaleModal .hold-sale-details .sec-final-calculation td,
+    #allSaleModal .hold-sale-details .sec-final-calculation td {
+      padding: 3px 10px;
+      border: none; }
+    #holdSaleModal .hold-sale-details .sec-final-calculation td:nth-child(3),
+    #allSaleModal .hold-sale-details .sec-final-calculation td:nth-child(3) {
+      float: right; }
+  #holdSaleModal .hold-sale-details .input-group,
+  #allSaleModal .hold-sale-details .input-group {
+    margin-bottom: 15px; }
+    #holdSaleModal .hold-sale-details .input-group .form-control,
+    #allSaleModal .hold-sale-details .input-group .form-control {
+      border-right: 0px; }
+    #holdSaleModal .hold-sale-details .input-group .form-control:focus,
+    #allSaleModal .hold-sale-details .input-group .form-control:focus {
+      border: 1px solid #e3e3e3;
+      border-right: 0px; }
+    #holdSaleModal .hold-sale-details .input-group .input-group-text,
+    #allSaleModal .hold-sale-details .input-group .input-group-text {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-left: 0px; }
+
+#holdSaleModal .bottom-area-btns,
+#allSaleModal .bottom-area-btns {
+  display: flex;
+  justify-content: space-between; }
+  #holdSaleModal .bottom-area-btns .btn,
+  #allSaleModal .bottom-area-btns .btn {
+    width: 130px;
+    margin: 0 1px;
+    background: #45c2de;
+    border: 1px solid #45c2de; }
+
+#holdSaleModal .modal-footer,
+#allSaleModal .modal-footer {
+  display: block; }
+  #holdSaleModal .modal-footer .col-lg-5:first-child .btn,
+  #allSaleModal .modal-footer .col-lg-5:first-child .btn {
+    width: 100%; }
+
+#holdSaleModal .hold-sale-table .table01 tbody {
+  height: 337px; }
+
+#patientSerialModal .input-group .form-control,
+#medicalTestModal .input-group .form-control {
+  border-right: 0px; }
+
+#patientSerialModal .input-group .form-control:focus,
+#medicalTestModal .input-group .form-control:focus {
+  border: 1px solid #e3e3e3;
+  border-right: 0px; }
+
+#patientSerialModal .input-group .input-group-text,
+#medicalTestModal .input-group .input-group-text {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-left: 0px;
+  cursor: pointer; }
+
+#patientSerialModal .table,
+#medicalTestModal .table {
+  margin-bottom: 0; }
+  #patientSerialModal .table thead,
+  #medicalTestModal .table thead {
+    display: table;
+    background: #223242;
+    color: #fff;
+    width: 100%;
+    table-layout: fixed; }
+    #patientSerialModal .table thead th,
+    #medicalTestModal .table thead th {
+      width: 20%;
+      font-weight: 500;
+      font-size: 13px;
+      padding: 0.5rem .5rem;
+      border: 1px solid #223242;
+      border-bottom: none; }
+  #patientSerialModal .table tbody,
+  #medicalTestModal .table tbody {
+    display: block;
+    min-height: 330px;
+    max-height: 330px;
+    overflow-y: auto;
+    width: 100%; }
+  #patientSerialModal .table .table-row,
+  #medicalTestModal .table .table-row {
+    display: inline-table;
+    width: 100%; }
+    #patientSerialModal .table .table-row td,
+    #medicalTestModal .table .table-row td {
+      vertical-align: baseline;
+      padding: 0.5rem .75rem;
+      border-top: none;
+      color: #333;
+      font-size: 13px; }
+      #patientSerialModal .table .table-row td .form-control,
+      #medicalTestModal .table .table-row td .form-control {
+        height: 35px;
+        padding: 5px 10px; }
+      #patientSerialModal .table .table-row td .form-control::-webkit-input-placeholder,
+      #medicalTestModal .table .table-row td .form-control::-webkit-input-placeholder {
+        font-size: 13px !important;
+        font-weight: 500;
+        color: #666; }
+      #patientSerialModal .table .table-row td select,
+      #medicalTestModal .table .table-row td select {
+        cursor: pointer;
+        padding: 5px !important;
+        font-size: 13px !important;
+        font-weight: 500;
+        color: #666; }
+      #patientSerialModal .table .table-row td .payment-btn,
+      #medicalTestModal .table .table-row td .payment-btn {
+        background: #0ea71b;
+        border: 1px solid #0ea71b;
+        padding: 8px 12px; }
+      #patientSerialModal .table .table-row td .payment-btn:hover,
+      #medicalTestModal .table .table-row td .payment-btn:hover {
+        background: #45c2de;
+        border: 1px solid #45c2de; }
+
+#patientSerialModal .six-col th:first-child,
+#patientSerialModal .six-col td:first-child,
+#medicalTestModal .six-col th:first-child,
+#medicalTestModal .six-col td:first-child {
+  width: 10% !important; }
+
+#patientSerialModal .six-col th:nth-child(2),
+#patientSerialModal .six-col td:nth-child(2),
+#medicalTestModal .six-col th:nth-child(2),
+#medicalTestModal .six-col td:nth-child(2) {
+  width: 25% !important; }
+
+#patientSerialModal .six-col th:nth-child(3),
+#patientSerialModal .six-col td:nth-child(3),
+#medicalTestModal .six-col th:nth-child(3),
+#medicalTestModal .six-col td:nth-child(3) {
+  width: 15% !important; }
+
+#patientSerialModal .six-col th:nth-child(4),
+#patientSerialModal .six-col td:nth-child(4),
+#medicalTestModal .six-col th:nth-child(4),
+#medicalTestModal .six-col td:nth-child(4) {
+  width: 20% !important; }
+
+#patientSerialModal .six-col th:nth-child(5),
+#patientSerialModal .six-col td:nth-child(5),
+#medicalTestModal .six-col th:nth-child(5),
+#medicalTestModal .six-col td:nth-child(5) {
+  width: 15% !important; }
+
+#patientSerialModal .six-col th:nth-child(6),
+#patientSerialModal .six-col td:nth-child(6),
+#medicalTestModal .six-col th:nth-child(6),
+#medicalTestModal .six-col td:nth-child(6) {
+  width: 15% !important; }
+
+#patientSerialModal .bottom-area-btns,
+#medicalTestModal .bottom-area-btns {
+  border-top: 1px solid #e5e5e5;
+  text-align: right; }
+  #patientSerialModal .bottom-area-btns .btn,
+  #medicalTestModal .bottom-area-btns .btn {
+    background: #45c2de;
+    border: 1px solid #45c2de; }
+
+#patientPaymentModal .bottom-area-btns {
+  border-top: 1px solid #e5e5e5;
+  text-align: right;
+  padding-top: 15px; }
+  #patientPaymentModal .bottom-area-btns .btn {
+    background: #45c2de;
+    border: 1px solid #45c2de; }
+
+/*========================================*/
+/*========================================*/
+/*========================================*/
+@media (max-width: 1600px) {
+  #mainSection .cart-table {
+    height: 94.8%; }
+    #mainSection .cart-table .six-col tbody {
+      height: 419px; } }
+
+@media (max-width: 1366px) {
+  #mainSection .cart-table {
+    height: 94%; }
+    #mainSection .cart-table .six-col tbody {
+      height: 293px; }
+  #mainSection .product-area {
+    height: 94%; }
+  #mainSection .final-calculation .patient-test-table .table tbody {
+    min-height: 108px;
+    max-height: 108px; } }
+
+@media (min-width: 1200px) {
+  #mainSection .calculation-area .cart-table .six-col thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+  #mainSection .calculation-area .cart-table .six-col tbody {
+    display: block;
+    overflow-y: auto; }
+    #mainSection .calculation-area .cart-table .six-col tbody tr {
+      display: inline-table;
+      width: 100%; }
+  #mainSection .calculation-area .cart-table .six-col th:first-child,
+  #mainSection .calculation-area .cart-table .six-col td:first-child {
+    width: 35% !important; }
+  #mainSection .calculation-area .cart-table .six-col th:nth-child(2),
+  #mainSection .calculation-area .cart-table .six-col td:nth-child(2) {
+    width: 15% !important; }
+  #mainSection .calculation-area .cart-table .six-col th:nth-child(3),
+  #mainSection .calculation-area .cart-table .six-col td:nth-child(3) {
+    width: 20% !important; }
+  #mainSection .calculation-area .cart-table .six-col th:nth-child(4),
+  #mainSection .calculation-area .cart-table .six-col td:nth-child(4) {
+    width: 15% !important; }
+  #mainSection .calculation-area .cart-table .six-col th:nth-child(5),
+  #mainSection .calculation-area .cart-table .six-col td:nth-child(5) {
+    width: 15% !important; } }
+
+@media (max-width: 1200px) {
+  #mainSection {
+    overflow: auto; }
+  .top-area-btns-fixed {
+    position: fixed;
+    width: 98.9%;
+    padding: 5px 0 2px 0;
+    border-radius: 5px 5px 0 0;
+    z-index: 2;
+    margin-top: -6px;
+    background: #ebecee; }
+  #mainSection .bottom-area-btns .btn {
+    width: 49.4% !important; }
+  #mainSection .right-part .btn {
+    padding: 8px;
+    height: 50px; }
+    #mainSection .right-part .btn .fa {
+      display: block; }
+  #mainSection .calculation-area {
+    margin-top: 52px; }
+    #mainSection .calculation-area .cart-table {
+      height: 89%;
+      overflow: auto; }
+      #mainSection .calculation-area .cart-table .six-col {
+        height: 50vh; }
+    #mainSection .calculation-area .final-calculation {
+      position: relative;
+      overflow-x: initial; } }
+
+@media (max-width: 1199px) {
+  .calculation-area {
+    margin-top: 47px;
+    height: 95.5% !important; } }
+
+@media (max-width: 992px) {
+  #holdSaleModal .hold-sale-table .table01 tbody, #allSaleModal .hold-sale-table .table01 tbody {
+    height: 202px; } }
+
+@media (min-width: 992px) {
+  #patientSerialModal .modal-dialog,
+  #medicalTestModal .modal-dialog {
+    max-width: 992px; } }
+
+@media (max-width: 991px) {
+  #patientSerialModal .modal-dialog,
+  #medicalTestModal .modal-dialog {
+    max-width: 768px; } }
+
+@media (min-width: 768px) {
+  #mainSection .bottom-area-btns {
+    display: flex; } }
+
+@media (max-width: 767px) {
+  #mainSection .bottom-area-btns {
+    display: block;
+    text-align: justify; }
+    #mainSection .bottom-area-btns .btn {
+      width: 32.7%;
+      margin: 2px 0;
+      padding: 8px;
+      height: 50px; }
+    #mainSection .bottom-area-btns .btn:last-child {
+      width: 100% !important; }
+  #mainSection .calculation-area {
+    margin-top: 52px; } }
+
+@media (min-width: 512px) {
+  .mob-btns {
+    display: none; } }
+
+@media (max-width: 511px) {
+  #mainSection .bottom-area-btns .btn {
+    width: 49.3% !important; }
+  #mainSection .right-part .btn {
+    padding: 8px;
+    height: 50px; }
+    #mainSection .right-part .btn .fa {
+      display: block; }
+  #mainSection .calculation-area {
+    margin-top: 52px;
+    height: 92% !important; }
+    #mainSection .calculation-area .cart-table {
+      height: 93%;
+      overflow: auto; }
+    #mainSection .calculation-area .final-calculation {
+      position: relative;
+      overflow-x: initial; }
+  .top-area-btns {
+    width: 98%; }
+  .side-indicator {
+    width: calc(100% - 100%) !important;
+    height: 94vh !important; }
+  .side-indicator.active {
+    width: calc(100% - 65%) !important; }
+  .item-area {
+    width: calc(100% - 0%) !important; }
+    .item-area .col-6.full-width-col {
+      flex: 100%;
+      max-width: 100%; }
+    .item-area .item-area-box {
+      padding-bottom: 92px !important; } }

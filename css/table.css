@@ -1,0 +1,127 @@
+/*======================================
+		NEW TABLE CSS START
+======================================*/
+.custom-input-sid input[type=file]::file-selector-button {
+    padding: 3px 8px;
+    background-color: #e9ecef;
+    border: 1px solid #e3e3e3;
+}
+.custom-input-sid input{
+    background: white;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+.new-table .submit-btn button{
+    padding: 5px 10px;
+}
+.new-table .submit-btn{
+    padding-right: 10px !important;
+}
+.new-table{
+    margin: 45px 12px 0px 12px;
+    border: 1px solid #223242;
+}
+.new-table table{
+    margin-bottom: 0;
+    border-spacing: 0;
+    border: none;
+}
+.new-table tr{
+    width: 100%;
+}
+.new-table td{
+    text-align: center;
+    border: none !important;
+}
+.new-table th{
+    text-align: center;
+}
+.new-table thead{
+    background: #223242;
+}
+.new-table thead tr th{
+    color: #ffffff;
+}
+.new-table .img-td{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.new-table .input-td{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+/* customer row */
+.new-table .customer-row{
+    background: #16a085;
+}
+/* service row */
+.new-table .service-row{
+    background-color: #81DAF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* item row */
+.new-table .item-row{
+    background-color: #ffffff;
+}
+.new-table .service-row .img-td{
+    transition: 0.5s;
+}
+.new-table .service-row .img-td img{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.new-table .service-row .img-td:hover img{
+    transform: scale(1.9);
+}
+.new-attendance-table .name-td{
+    position: relative;
+    padding-top: 0 !important;
+}
+.new-attendance-table .name-td .name-td-body {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+.new-attendance-table .name-td .name-td-body span{
+    line-height: 10px;
+}
+.new-attendance-table .name-td .name-td-body p{
+    line-height: 13px;
+}
+.new-attendance-table .timepicker_div .form-control {
+    padding: 15px 35px;
+    height: 30px;
+}
+.new-attendance-table .comment-td .form-control {
+    padding: unset !important;
+    height: 30px;
+    width: 75%;
+    margin: 0 auto;
+}
+.new-attendance-table .time-td .form-control {
+    height: 30px;
+    width: 75%;
+    margin: 0 auto;
+}
+.new-attendance-table .comment-td select{
+    cursor: pointer;
+}
+.new-attendance-table tbody td{
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+
+.last-tr-row{
+    background: #e0e9f1 !important;
+}
+
+
+/*======================================
+		NEW TABLE CSS END
+======================================*/

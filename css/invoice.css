@@ -1,0 +1,92 @@
+.down-side .description .desc-row {
+
+}
+.main .down-side {
+    display: flex;
+    justify-content: space-between;
+}
+.down-side .description{
+    width: 100%;
+}
+.down-side .description .desc-row .item {
+    width: 25%;
+
+}
+.down-side .description .desc-row .item span{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    color: blue;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 225, 225);
+}
+body .main{
+    width: 595px;
+    height: 842px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+input {
+    /* text-align: right; */
+    /* border: none !important; */
+}
+
+.main .input-body {
+    position: relative;
+}
+
+.main .input-body .item {
+    position: relative;
+}
+
+.main .input-body .down-item {
+    position: relative;
+}
+
+.main .input-body .item span {
+    position: absolute;
+    top: 10px;
+    left: 130px;
+}
+
+.main .input-body .item3 span {
+    /* left: 30px; */
+}
+
+.main .input-body .down-item span {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.main .input-body .qty-item span {
+    top: 37px;
+}
+
+
+
+.main .img-box {
+    /* overflow: hidden; */
+}
+
+.d-flex {
+    display: flex;
+}

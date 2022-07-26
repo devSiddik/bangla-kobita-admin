@@ -1,0 +1,709 @@
+/*======================================
+		COMMON CSS Start
+======================================*/
+*{ margin:0; padding: 0; }
+ul,ol{ list-style: none !important; }
+ul{ margin-bottom: 0 !important; }
+ul li{ display: inline-block; }
+a{ text-decoration: none !important; }
+p{ margin-bottom: 0 !important; font-weight: 600;}
+body{
+	height: 100vh;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background: #5AB9C1;
+}
+
+.body-part .col-lg-3{
+    position: relative;
+}
+.radio-buttons input{
+    cursor: pointer;
+}
+.radio-buttons label{
+    cursor: pointer;
+}
+.radio-buttons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-45%, 0);
+    margin: 0 auto;
+    width: 100%;
+    z-index: 999999;
+}
+.radio-buttons .tonce-radio{
+    margin: 0 40px;
+}
+/* radio button start */
+
+  .radio-buttons li{
+    color:  #2c2828 ;
+    display: block;
+    position: relative;
+  }
+
+  .radio-buttons li input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .radio-buttons li label{
+    display: block;
+    position: relative;
+    height: 30px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+  }
+
+  .radio-buttons li:hover label{
+      color: #0e7762;
+  }
+
+  .radio-buttons li .check {
+    display: block;
+    position: absolute;
+    border: 4px solid #2c2828 ;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    top: 0px;
+    left: -23px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+  .radio-buttons li:hover .check {
+    border: 4px solid #0e7762;
+  }
+
+  .radio-buttons li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 6px;
+    width: 6px;
+    top: 3px;
+    left: 3px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+.body-part input[type=radio]:checked ~ .check {
+    border: 4px solid #0e7762;
+  }
+
+.body-part input[type=radio]:checked ~ .check::before{
+    background: #0e7762;
+  }
+
+.body-part input[type=radio]:checked ~ label{
+    color: #0e7762;
+  }
+  /* radion button ends */
+
+
+.form-control[readonly] {
+    background-color: #fff;
+}
+.p-left-5{ padding-left: 5px; }
+.p-left-10{ padding-left: 10px; }
+.m-left-1{ margin-left: 0.1px; }
+.m-left-5{ margin-left: 5px; }
+.m-left-10{ margin-left: 10px; }
+.p-right-5{ padding-right: 5px; }
+.bismillah{ padding: 12px 15px 0px 15px; }
+.bismillah .mtb-10{ margin: 10px 0; }
+.bismillah .mtb-5{ margin: 5px 0; }
+.bismillah .form-group { margin-bottom: 10px; }
+.bismillah label { margin-bottom: 3px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600;}
+.bismillah .number{ font-family: 'Roboto Slab', serif; font-weight: 500; font-size: 18px;}
+.bismillah .roboto-text{ font-family: 'Roboto Slab', serif; font-weight: 500; }
+.bismillah .placeholder{ color: #000000; }
+.bismillah .placeholder option{ color: #000000; }
+input::placeholder{
+    color: #2c2828 !important;
+    font-weight: 500 !important;
+}
+/*======================================
+		COMMON CSS End
+======================================*/
+/*======================================
+		TOTAL PART CSS START
+======================================*/
+.bismillah .total-part {
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    right: 15px;
+}
+.bismillah .total-part .form-control {
+    padding: 3px 10px 5px 10px;
+    height: 33px;
+    font-size: 16px;
+    width: 85px;
+}
+.bismillah .total-part .fields {
+    margin: 15px 0 15px 0;
+}
+.bismillah .total-part .fields .left{
+	margin-right: 20px;
+}
+.bismillah .total-part p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+.bismillah .total-part button {
+    outline: none;
+    margin-bottom: 10px;
+    width: 96px;
+    padding: 8px 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Inter', serif;
+}
+.bismillah .total-part a {
+    display: inline-block;
+    outline: none;
+    margin-bottom: 10px;
+    width: 96px;
+    padding: 8px 9px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Inter', serif;
+}
+.total-part .sidebar-btn span:before {
+    left: -23px;
+    top: -11px;
+    width: 0px;
+    height: 2px;
+    transition: all 500ms ease;
+}
+.total-part .sidebar-btn .span-hover:before {
+    left: -9px;
+    top: -11px;
+}
+.total-part .sidebar-btn .span-hover2:before {
+    left: -20px;
+    top: -11px;
+}
+.total-part .sidebar-btn .span-hover3:before {
+    left: -8px;
+    top: -11px;
+}
+.total-part .sidebar-btn span:after {
+	right: -106px;
+    bottom: -13px;
+    width: 0px;
+    height: 2px;
+    transition: all 500ms ease;
+  }
+  .total-part .sidebar-btn .span-hover:after{
+    right: -87px;
+    bottom: -12px;
+  }
+  .total-part .sidebar-btn .span-hover2:after {
+    right: -76px;
+}
+  .total-part .sidebar-btn .span-hover3:after {
+    right: -88px;
+}
+  .total-part .sidebar-btn:hover span::before {
+    width: 96px;
+}
+  .total-part .sidebar-btn:hover span::after {
+    width: 96px;
+}
+.total-part .middle-btn{
+	margin: 0 10px;
+}
+/*======================================
+		TOTAL PART CSS END
+======================================*/
+/*======================================
+		TABLE PART CSS START
+======================================*/
+/* table scrollbar css start */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #136b59 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #136b59;
+    border-radius: 10px;
+    border: 0.1px solid #ffffff;
+  }
+/* table scrollbar css end */
+.bismillah .table-part{
+	height: 38vh;
+    overflow: auto;
+    background-color: #f4f4f4;
+}
+
+.bismillah .table-part .number{
+  /* color: #495057; */
+  font-family: none;
+}
+.bismillah .table-part .action{
+    position: relative;
+}
+.bismillah .table-part .action button {
+    /* padding: 2px 8px; */
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: none;
+    background: #16a085;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+.bismillah .table-part .action i{
+    color: #fff;
+    font-size: 21px;
+    transition: 0.4s;
+}
+.bismillah .table-part .action button:hover {
+    background: #fff;
+}
+.bismillah .table-part .action button:hover i{
+    color: rgb(255, 8, 8);
+    font-size: 22px;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+	/* border: 1px solid #bdc3c7; */
+	/* box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2); */
+}
+
+tr {
+	transition: all .2s ease-in;
+	cursor: pointer;
+	background: #f4f4f4;
+}
+
+td{
+	padding: 0 5px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+th{
+	padding: 3px 5px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+}
+
+#header {
+	background-color: rgb(31, 49, 67, 0.8);
+	color: #fff;
+}
+
+table h1 {
+	font-weight: 600;
+	text-align: center;
+	background-color: #16a085;
+	color: #fff;
+	padding: 1px 0px;
+}
+
+.tr-hover:hover {
+	background-color: #16a085;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+.bismillah .table-part .tr-hover:hover .action button {
+    background: #fff;
+}
+.bismillah .table-part .tr-hover:hover .action button i{
+    color: rgb(255, 8, 8);
+    font-size: 22px;
+}
+
+.tr-hover td{
+    transition: 0.4s;
+}
+.tr-hover:hover td{
+    color: #fff;
+}
+.tableFixHead #header th {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(31, 49, 67);
+}
+@media only screen and (max-width: 768px) {
+	table {
+		width: 90%;
+	}
+}
+/*======================================
+		TABLE PART CSS END
+======================================*/
+/*======================================
+		SELECT PART CSS START
+======================================*/
+.bismillah .select-part .form-control {
+    padding: 0px 10px;
+    height: 34px;
+    font-size: 15px;
+}
+.bismillah .select-part option{
+	text-transform: uppercase;
+}
+.bismillah .select-part{
+	border: 2px solid #2cacb8;
+    padding: 0 10px;
+    margin: 13px 0;
+}
+.bismillah .chosen-container-single .chosen-single {
+    padding: 4px 8px 5px 8px;
+    height: 34px;
+}
+/*======================================
+		SELECT PART CSS END
+======================================*/
+/*======================================
+		SIDEBAR PART CSS START
+======================================*/
+.bismillah .sidebar-part{
+	height: 75vh;
+	/* height: 74.5vh; */
+	border: 2px solid #2cacb8;
+	border-top: none;
+	padding-right: 5px;
+}
+.bismillah .sidebar-part .sidebar-border{
+	position: relative;
+	justify-content: center;
+	margin-top: 7px;
+}
+.bismillah .sidebar-part .sidebar-border::before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: -2px;
+    height: 30px;
+    width: 2px;
+    background-color: #2cacb8;
+    z-index: 1;
+}
+.bismillah .sidebar-part .sidebar-border::after {
+    content: '';
+    position: absolute;
+    top: -17px;
+    right: 8px;
+    height: 30px;
+    width: 2px;
+    background-color: #2cacb8;
+    z-index: 1;
+}
+.bismillah .item-btn{
+	position: relative;
+	margin-left: 17px;
+    font-size: 15px;
+	text-transform: capitalize;
+}
+.bismillah .item-btn::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: -17px;
+    width: 13px;
+    height: 2px;
+    background-color: #2cacb8;
+    z-index: 1;
+}
+.bismillah .item-btn::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    width: 70%;
+    height: 2px;
+    background-color: #2cacb8;
+    z-index: 1;
+}
+.bismillah .sidebar-part .width-85 {
+    flex: 0 0 145px;
+    margin-right: 10px;
+}
+.bismillah .sidebar-part button {
+    outline: none;
+    width: 95%;
+    margin: 5px 5px 14px 5px;
+    padding: 17px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Inter', serif;
+}
+.bismillah .sidebar-part .long-text button {
+    font-size: 12px;
+    padding: 11px 0;
+}
+/* button */
+  .custom-btn {
+    color: #fff;
+    /* width: 130px; */
+    /* height: 40px; */
+    /* padding: 10px 25px; */
+    /* font-family: 'Lato', sans-serif; */
+    /* font-weight: 500; */
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  .sidebar-btn {
+    background: #16a085;
+    /* line-height: 40px; */
+    padding: 0;
+    border: none;
+    box-shadow: 0 0 5px #16a085;
+  }
+  .sidebar-btn span {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .sidebar-btn:hover{
+    background: transparent;
+  }
+  .sidebar-btn:before,
+  .sidebar-btn:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 2px;
+    background: #16a085;
+   box-shadow: 0 0 5px #16a085;
+  }
+  .sidebar-btn:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+  }
+  .sidebar-btn:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+  }
+  .sidebar-btn:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .sidebar-btn:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .sidebar-btn span:before,
+  .sidebar-btn span:after {
+    position: absolute;
+    content: "";
+    background: #16a085;
+    box-shadow: 0 0 5px #16a085;
+  }
+  .sidebar-btn span:before {
+    left: -19px;
+    top: -20px;
+    width: 0px;
+    height: 2px;
+    transition: all 500ms ease;
+}
+  .sidebar-btn .diff-hover1:before{
+	left: -2px;
+	top: -12px;
+  }
+  .sidebar-btn .diff-hover2:before{
+	left: -30px;
+  }
+  .sidebar-btn .diff-hover3:before{
+	left: -48px;
+  }
+
+  .sidebar-btn span:after {
+    right: -118px;
+    bottom: -21px;
+    width: 0px;
+    height: 2px;
+    transition: all 500ms ease;
+}
+  .sidebar-btn .diff-hover1:after{
+    right: -140px;
+  }
+  .sidebar-btn .diff-hover2:after{
+    right: -113px;
+  }
+  .sidebar-btn .diff-hover3:after{
+    right: -93px;
+  }
+  .sidebar-btn:hover span::before {
+    width: 137px;
+  }
+  .sidebar-btn:hover span::after {
+    width: 138px;
+  }
+.customer-select .chosen-container{
+    width: 78.4% !important
+}
+.mto-5{
+    margin-top: 5px;
+}
+.bismillah .customer label{
+    width: 115px;
+}
+.bismillah .select-part .chosen-container .chosen-results li {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.bismillah .select-part .chosen-container-single .chosen-single span {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.bismillah .customer .chosen-container .chosen-results li {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.bismillah .customer .chosen-container-single .chosen-single span {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.bismillah .customer-select .chosen-container .chosen-results li{
+    text-transform: initial;
+}
+.bismillah .customer-select .chosen-container-single .chosen-single span {
+    text-transform: initial;
+}
+/*======================================
+		SIDEBAR PART CSS END
+======================================*/
+/*======================================
+		HEADER PART CSS START
+======================================*/
+.bismillah .header-part .customer-select .chosen-container-single .chosen-single {
+    padding: 0px 8px 0px 10px;
+    height: 25px;
+}
+.bismillah .header-part{
+	margin-bottom: 1px;
+}
+.bismillah .header-part .form-control {
+    padding: 5px 10px;
+    height: 23px;
+    font-size: 14px;
+}
+/* voucher */
+.bismillah .header-part .voucher {
+    border: 2px solid #2cacb8;
+    padding: 6.7px 5px;
+}
+.bismillah .header-part p{
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+}
+/* customer */
+.bismillah .header-part .customer {
+    border: 2px solid #2cacb8;
+    padding: 1px;
+}
+.bismillah .header-part .customer .customer-btn a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #16a085;
+    text-align: center;
+    align-items: center;
+    line-height: 35px;
+    border-radius: 7px;
+	margin: 5px;
+	outline: none;
+	border: none;
+	transition: 0.4s;
+    cursor: pointer;
+}
+.bismillah .header-part .customer .customer-btn a:hover{
+	border-radius: 50%;
+}
+.bismillah .header-part .customer .customer-btn i{
+	font-size: 18px;
+	color: #fff;
+}
+/* grand-total */
+.bismillah .header-part .grand-total {
+    border: 2px solid #2cacb8;
+    padding: 5px;
+	transition: 0.4s;
+}
+.bismillah .header-part .grand-total h2{
+	font-family: 'Roboto Slab', serif;
+	font-size: 24px;
+	font-weight: 800;
+  text-transform: uppercase;
+	color: #136b59;
+}
+.bismillah .header-part .grand-total .grand-total-amount{
+	background: #16a085;
+}
+.bismillah .header-part .grand-total .grand-total-amount i {
+    display: inline-block;
+    font-size: 27px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+}
+.bismillah .header-part .grand-total span{
+	display: block;
+	color: #fff;
+	font-family: 'Concert One', cursive;
+	font-size: 30px;
+	font-weight: 500;
+	transform: scale(1.1);
+	transition: 0.4s;
+}
+.bismillah .header-part .grand-total:hover span{
+	transform: scale(1.3);
+}
+/*======================================
+		HEADER PART CSS END
+======================================*/

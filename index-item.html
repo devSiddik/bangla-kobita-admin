@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap">
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <link rel="stylesheet" href="css/jquery-ui.css">
+   <link rel="stylesheet" href="css/jquery-editable-select.css">
+   <link rel="stylesheet" href="css/dashboard.css">
+   <link rel="stylesheet" href="css/table.css">
+   <link rel="stylesheet" href="css/timepicker.css">
+   <link rel="stylesheet" href="css/jquery-customselect.css">
+   <link rel="stylesheet" href="css/chosen.min.css" />
+   <link rel="stylesheet" href="css/sweetalert2.min.css" type="text/css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+   
+    <title>Admin panels</title>
+
+    <style>
+        #datepicker > span:hover{cursor: pointer;}
+        #datepicker2 > span:hover{cursor: pointer;}
+        #datepicker3 > span:hover{cursor: pointer;}
+        #editdatepicker > span:hover{cursor: pointer;}
+        #editdatepicker2 > span:hover{cursor: pointer;}
+        #editdatepicker3 > span:hover{cursor: pointer;}
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        margin: 0 !important;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield !important;
+        appearance: textfield !important;
+        }
+
+    </style>
+
+    <style>
+        .custom-input-sid input[type=file]::file-selector-button {
+            padding: 7px 10px;
+            background-color: #e9ecef;
+            border: 1px solid #e3e3e3;
+        }
+        .custom-input-sid input{
+            background: white;
+            border: 1px solid #e3e3e3;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body class="main-body">
+
+    <!-- delete form -->
+    <form action="" id="deleteItemForm" method="POST">
+      
+    </form>
+
+    <nav id="sidenav" class="show">
+
+        <div class="home-btn" style="text-align: center">
+            <div class="header text-center hide-header">
+                <span class="mt-3 hide-home">HOME</span> <a href="javascript:void(0)" id="showsidenav"><i class="fa fa-bars"></i> </a>
+            </div>
+        </div>
+    
+        <ul class="main-ul">
+    
+            <li class="list-item">
+                <a id="dashboard" href="dashboard.html" class="">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li class="list-item">
+                <a id="bank" href="javascript:void(0)" class="">
+                    <i class="fas fa-list-alt"></i>
+                    <span>Singlelevel</span>
+                    <i class="drop-icon fa fa-caret-down"></i>
+                </a>
+                <ul class="drop-down">
+                    <li>
+                        <a id="bank_account_history" href="add-item.html" class="">
+                            <i class="fas fa-list-alt"></i>
+                            <span>Create</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="bank_account_history" href="index-item.html" class="">
+                            <i class="fas fa-list-alt"></i>
+                            <span>List</span>
+                        </a>
+                    </li>
+    
+                </ul>
+            </li>
+            
+            <li class="list-item">
+                <a id="bank" href="javascript:void(0)" class="">
+                    <i class="fas fa-list-alt"></i>
+                    <span>Multilevel</span>
+                    <i class="drop-icon fa fa-caret-down"></i>
+                </a>
+                <ul class="drop-down">
+                    <li>
+                        <a id="bank_account_history" href="add-item.html" class="">
+                            <i class="fas fa-list-alt"></i>
+                            <span>Create</span>
+                        </a>
+                    </li>
+                    
+                    <li class="list-item">
+                        <a id="bank" href="javascript:void(0)" class="">
+                            <i class="fas fa-list-alt"></i>
+                            <span>Item</span>
+                            <i class="drop-icon fa fa-caret-down"></i>
+                        </a>
+                        <ul class="drop-down">
+
+                            <li>
+                                <a id="bank_account_history" href="add-item.html" class="">
+                                    <i class="fas fa-list-alt"></i>
+                                    <span>Create</span>
+                                </a>
+                            </li>
+
+                            <li class="list-item">
+                                <a id="bank" href="javascript:void(0)" class="">
+                                    <i class="fas fa-list-alt"></i>
+                                    <span>Item</span>
+                                    <i class="drop-icon fa fa-caret-down"></i>
+                                </a>
+                                <ul class="drop-down">
+                                    <li>
+                                        <a id="bank_account_history" href="add-item.html" class="">
+                                            <i class="fas fa-list-alt"></i>
+                                            <span>Create</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="bank_account_history" href="index-item.html" class="">
+                                            <i class="fas fa-list-alt"></i>
+                                            <span>List</span>
+                                        </a>
+                                    </li>
+                    
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+    
+                </ul>
+            </li>
+    
+            <li class="list-item">
+                <a id="company" href="company.html" class="">
+                    <i class="fas fa-building"></i>
+                    <span>Company</span>
+                </a>
+            </li>
+    
+        </ul>
+
+    </nav>
+    
+    
+    <section id="pageContent" class="">
+        <div class="container">
+    
+            <!-- ============================== TOP HEADER ============================== -->
+            <nav id="topHeader" class="fixed-top">
+                <div class="pageContentMenu">
+                <a href="#" id="showsidenav2"><i class="fa fa-bars"></i> </a>
+                </div>    
+            
+                <div class="part-2">
+                <!-- ========== NOTIFICATION ========== -->
+                <div class="notification-area">
+                    <i class="fa fa-bell"></i>
+                </div>
+    
+    
+                <!-- ========== PROFILE ========== -->
+                <div class="profile">
+                    <img src="https://www.bangla-kobita.com/Images/Logo.png" alt="">
+                    <span class="intro">Name <i class="fa fa-angle-down"></i></span>
+                </div>
+                <div class="dropdown-profile">
+                    <div class="header text-center">
+                        <div class="img-box">
+                            <img src="https://www.bangla-kobita.com/Images/Logo.png" alt="">
+                        </div>
+                        <div class="txt-box">
+                            <p>Username</p>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <ul>
+                        <li><a href="#"><i class="fa fa-pencil-square-o"></i><span> Role : Admin</span></a></li>
+                            <li><a ><i class="fas fa-user-alt"></i><span> My profile</span></a></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out"></i><span> Log in</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </nav>
+    
+    
+            <div style="padding-bottom: 60px; background: #f7f7f7;">
+            </div>
+    
+    
+            <!-- BODY CONTENT -->
+
+            <div id="accountPageMain">
+                <div class="row mx-0 mt-3">
+                   <div class="col-6">
+                      <h4 class="mb-0">Item</h4>
+                   </div>
+                   <div class="col-6">
+                        <a href="add-item.html" type="button" class="btn btn-blue float-right" style="list-style:none; text-decoration:none; color:white">
+                             Add Data
+                        </a>
+                   </div>
+                </div>
+                <div id="tableSection2" style="position: relative">
+                   <div class="row mx-0">
+                      <div class="col-12">
+                         <div class="table-top">
+                            <form class="">
+                                <div class="row" style="margin-bottom: 10px">
+                                    <div class="col-lg-6">
+                                        <div class="row" style="display: flex;">
+                                            <div class="col-lg-4 p-0 sid-flex">
+                                                <span for="">Item Name:</span>
+                                            </div>
+                                            <div class="col-lg-7 p-0">
+                                                <input type="text" autocomplete="off"  class="form-control search ml20" id="searchBank" placeholder="Search Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                         </div>
+                         <div class="account-table table-data">
+            
+                        <!---------------=========================
+                                       TABLE DATA
+                        =========================---------------->
+            
+                        <table class="table table-striped common-table">
+                            <thead class="">
+                               <tr>
+                                  <th class="text-center" scope="col" width="5%">SN</th>
+                                  <th class="text-center" scope="col" width="10%">Image</th>
+                                  <th class="text-center" scope="col" width="10%">Name</th>
+                                  <th class="text-center" scope="col" width="20%">Email</th>
+                                  <th class="text-center" scope="col" width="10%">Phone</th>
+                                  <th class="text-center" scope="col" width="5%">Status</th>
+                                  <th class="text-center" scope="col" width="10%">Actions</th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-row">
+                        
+                                    <td class="text-center" width="5%" >1</td>
+                                    <td class="text-center" width="10%">
+                                        <img src="images/login-bg.jpg" alt="image" width="60px" height="50px">
+                                    </td>
+                                    <td class="text-center" width="10%" >item name</td>
+                                    <td class="text-center" width="20%" >item email</td>
+                                    <td class="text-center" width="10%" >item mobile</td>
+                        
+                                    <td class="text-center" width="5%">
+                                        <a class="updateStatus" id="id-1" item-id="1"
+                                            item-url="asdfljk" href="javascript:void(0)">
+                                            <i class="fa fa-toggle-on text-success" status="Active"></i>
+                                        </a>
+                                    </td>
+                        
+                                    <td class="text-center" width="10%" >
+                                        <a class="btn btn-primary fa-btn editme" href="add-item.html">
+                                           <i class="fa fa-pencil"></i>
+                                        </a>
+                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                        </button>
+                                         <button type="button" class="btn btn-danger"  data-toggle="modal" data-target="#deleteAlertModal" title="Delete me">
+                                            <i class="fas fa-trash"></i>
+                                         </button>
+                                    </td>
+                        
+                                 </tr>
+                                <tr class="table-row">
+                        
+                                    <td class="text-center" width="5%" >1</td>
+                                    <td class="text-center" width="10%">
+                                        <img src="images/login-bg.jpg" alt="image" width="60px" height="50px">
+                                    </td>
+                                    <td class="text-center" width="10%" >item name</td>
+                                    <td class="text-center" width="20%" >item email</td>
+                                    <td class="text-center" width="10%" >item mobile</td>
+                        
+                                    <td class="text-center" width="5%">
+                                        <a class="updateStatus" id="id-1" item-id="1"
+                                            item-url="asdfljk" href="javascript:void(0)">
+                                            <i class="fa fa-toggle-off text-danger" status="Inactive"></i>
+                                        </a>
+                                    </td>
+                        
+                                    <td class="text-center" width="10%" >
+                                        <a class="btn btn-primary fa-btn editme" href="add-item.html">
+                                           <i class="fa fa-pencil"></i>
+                                        </a>
+                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                        </button>
+                                         <button type="button" class="btn btn-danger"  data-toggle="modal" data-target="#deleteAlertModal" title="Delete me">
+                                            <i class="fas fa-trash"></i>
+                                         </button>
+                                    </td>
+                        
+                                 </tr>
+                            </tbody>
+                         </table>
+            
+                         </div>
+            
+                      </div>
+                   </div>
+                   <div class="table-pagination">
+                    <ul class="pagination justify-content-end">
+                       <li class="page-item disabled">
+                          <span class="page-link">Previous</span>
+                       </li>
+                       <li class="page-item"><a class="page-link" href="#">1</a></li>
+                       <li class="page-item active">
+                          <span class="page-link">2<span class="sr-only">(current)</span></span>
+                       </li>
+                       <li class="page-item"><a class="page-link" href="#">3</a></li>
+                       <li class="page-item"><a class="page-link" href="#">Clear</a></li>
+                    </ul>
+                 </div>
+                </div>
+            </div>
+            
+            
+            
+            <!-- ============================== VIEW MODUL ============================== -->
+            <div class="modal fade extra-width" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="false">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                        <div class="modal-header" style="background-color:#223242">
+                            <h4 style="color:white" class="modal-title" id="exampleModalLongTitle">View!</h4>
+                        </div>
+            
+                        <div class="modal-body">
+                            <form id="newModal" method="post">
+                                <div class="form-row text-left">
+                                    <div class="form-group col-md-4">
+                                        <label for="">Name:</label>
+                                        <input type="text" autocomplete="off"  name="name" id="name" class="form-control" placeholder=""  required>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="">Email:</label>
+                                        <input type="text" autocomplete="off"  name="email" id="email" class="form-control" placeholder="" required>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="">Description:</label>
+                                        <input type="number" autocomplete="off"  name="description" id="description" class="form-control" placeholder="" readonly required>
+                                    </div>
+                                </div>
+                                <div class="modal-footer pb-0 px-0">
+                                    <div class="btns">
+                                        <input type="submit" class="btn mr-3">
+                                        <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                  </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            <!---------------===========================================
+                            DELETE MODAL
+            =================================--------------------------->
+            
+            <div id="deleteAlertModal" class="modal fade">
+                <div class="modal-dialog modal-confirm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                             <div class="icon-box">
+                                   <i class="material-icons fa fa-times"></i>
+                              </div>
+                              <h4 class="modal-title">Are you sure?</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Do you really want to delete these records? This process cannot be undone.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-danger" onclick="completeDelete()">Delete</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            <!---------------===========================================
+                                 ADD MODAL
+            =================================--------------------------->
+            
+            <div class="modal fade text-center" id="addAccount" data-backdrop="false">
+                <div class="modal-dialog modal-dialog-centered">
+                   <div class="modal-content">
+                       <div style="background-color:#223242" class="modal-header">
+                           <h4 style="color:white" class="modal-title">ADD!</h4>
+                       </div>
+                       <div class="modal-body">
+                            <div class="alert alert-danger add-error" style="display:none">
+                                <strong>Failed !</strong> Invalid Entry
+                            </div>
+                           <form id="addForm" method="post" >
+                           @csrf
+                               <div class="form-row text-left">
+                                   <div class="form-group col-md-6">
+                                       <label for="">Name:</label>
+                                       <input type="text" autocomplete="off"  name="name" class="form-control" placeholder=""  required>
+                                   </div>
+                                   <div class="form-group col-md-6">
+                                       <label for="">Description:</label>
+                                       <input type="text" autocomplete="off"  name="description" class="form-control" placeholder="">
+                                   </div>
+                               </div>
+                               <div class="modal-footer pb-0 px-0">
+                                   <div class="btns">
+                                       <input type="submit" class="btn mr-3">
+                                       <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                                   </div>
+                               </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            <!---------------===========================================
+                                 EDIT MODAL
+            =================================--------------------------->
+            
+            <div class="modal fade text-center" id="editAccountModal" data-backdrop="false">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div style="background-color:#223242" class="modal-header">
+                        <h4 style="color:white" class="modal-title">EDIT!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-danger edit-error" style="display:none">
+                            <strong>Failed !</strong> Invalid Entry
+                        </div>
+                        <form id="editForm">
+                            @csrf
+                            @method('PUT')
+                            <div class="form-row text-left">
+                                <input type="hidden" id="editId" class="form-control" placeholder="">
+                                <div class="form-group col-md-6">
+                                    <label for="">Name:</label>
+                                    <input type="text" autocomplete="off"  name="name" id="editName" class="form-control" placeholder=""  required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="">Description:</label>
+                                    <input type="text" autocomplete="off"  name="description" id="editDescription" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="modal-footer pb-0 px-0">
+                                <div class="btns">
+                                    <input type="submit" class="btn mr-3">
+                                    <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+           
+           <!-- /BODY CONTENT -->
+
+        </div>
+    </section>
+
+
+    
+    <!-- ============================== ALERTBOX SECTION ============================== -->
+
+    <!-- ==============================SUCCESSFUL ALERTBOX ============================== -->
+    <div class="modal fade text-center" id="successModal" data-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-left">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h4 class="modal-title">successful!</h4>
+                        <h3><i class="fa fa-check-circle" style="font-size:78px;color:green"></i></h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============================FAILED ALERTBOX ============================== -->
+    <div class="modal fade text-center" id="failledModal" data-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-left">
+                <div class="row">
+                    <div class="col-12 text-center">
+                    <h4 class="modal-title">Failled!</h4>
+                    <h3><i class="fa fa-exclamation-triangle" style="font-size:78px;color:red"></i></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- ==============================ALERT ALERTBOX ============================== -->
+    <div class="modal fade text-center" id="alertMe" data-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div style="background-color:#D10F0F" class="modal-header">
+                <h4 style="color:white" class="modal-title">Alert!</h4>
+            </div>
+                <div class="modal-body">
+                <div class="col-12 text-center"><br>
+                    <h5 class="modal-title">DO YOU WANT TO DELETE THIS ?</h5><br>
+                </div><br>
+                <div class="modal-footer pb-0 px-0">
+                    <div class="btns">
+                    <button type="button" id="confirmDelete" class="btn" data-dismiss="modal">Confirm</button>
+                        <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================== DELETE MODAL ============================== -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-box">
+                <i class="material-icons fa fa-times"></i>
+                </div>
+                <h4 class="modal-title">Are you sure?</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Do you really want to delete these records? This process cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/timepicker.js"></script>
+    <script src="js/jquery-customselect.min.js"></script>
+    <script src="js/jquery-editable-select.js"></script>
+    <script src="js/chosen.jquery.min.js"></script>
+    <script src="js/chosen.jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/ace-elements.min.js"></script>
+    <script src="js/ace.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/barchart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+
+    <script type="text/javascript">
+
+        jQuery(function($){
+
+            if(!ace.vars['touch']) {
+                $('.chosen-select').chosen({allow_single_deselect:true});
+                //resize the chosen on window resize
+
+                $(window)
+                    .off('resize.chosen')
+                    .on('resize.chosen', function() {
+                        $('.chosen-select').each(function() {
+                            var $this = $(this);
+                            $this.next().css({'width': $this.parent().width()});
+                        })
+                    }).trigger('resize.chosen');
+                //resize chosen on sidebar collapse/expand
+                $(document).on('settings.ace.chosen', function(e, event_name, event_val) {
+                    if(event_name != 'sidebar_collapsed') return;
+                    $('.chosen-select').each(function() {
+                        var $this = $(this);
+                        $this.next().css({'width': $this.parent().width()});
+                    })
+                });
+
+
+                $('#chosen-multiple-style .btn').on('click', function(e){
+                    var target = $(this).find('input[type=radio]');
+                    var which = parseInt(target.val());
+                    if(which == 2) $('#form-field-select-4').addClass('tag-input-style');
+                    else $('#form-field-select-4').removeClass('tag-input-style');
+                });
+            }
+
+        });
+
+
+        var deleteRoute = '';
+        var deleteRow = '';
+
+        function delete_item(route, object){
+            deleteRoute = route;
+            deleteRow = $(object).closest('tr');
+        }
+
+        function completeDelete(){
+            deleteRow.remove();
+            $('#deleteItemForm').submit();
+        }
+
+        $('#deleteItemForm').on('submit',(function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+
+            $.ajax({
+                type:'POST',
+                url: deleteRoute,
+                data:formData,
+                cache:false,
+                contentType: false,
+                processData: false,
+                success:function(response){
+                    $('#deleteAlertModal').hide();
+                    $('.modal-backdrop').hide();
+                    toastr.options =
+                    {
+                        "closeButton" : true,
+                        "progressBar" : true
+                    }
+                    toastr.success("Data Deleted Successfully!");
+                },
+                error: function(response){
+                    toastr.options =
+                    {
+                        "closeButton" : true,
+                        "progressBar" : true
+                    }
+                    toastr.error("Failed, Something went wrong!");
+                }
+            });
+        }));
+
+
+
+
+        function addError(){
+
+            $('.add-error').show();
+            setTimeout(function() {
+                $('.add-error').hide();
+            }, 4000);
+
+        }
+
+
+        //    $("#successModal").addClass('show').css("display", "block").attr('aria-modal', 'true').attr('role','dialog');
+
+        function successfull()
+        {
+            $("#successModal").show();
+            $('#successModal').addClass('show');
+
+             setTimeout(function() {
+                 $('.main-body').removeClass('modal-open');
+                 $('#successModal').removeClass('show');
+                 $("#successModal").removeAttr('aria-modal');
+                 $("#successModal").removeAttr('role');
+                 $("#successModal").attr('aria-hidden', true);
+                 $('#successModal').hide();
+             }, 800);
+        }
+
+        function editError(){
+
+            $('.edit-error').show();
+            setTimeout(function() {
+                $('.edit-error').hide();
+            }, 4000);
+
+        }
+
+        function resetForm(id)
+        {
+            $('#'+id)[0].reset();
+        }
+
+
+
+
+        /*--------------------------------------------------
+                    DATEPICKER JS
+        ---------------------------------------------------*/
+        $("#datepicker").datepicker({
+                autoclose: true,
+                todayHighlight: true
+        });
+        // }).datepicker('update', new Date());
+
+        $("#datepicker2").datepicker({
+                        autoclose: true,
+                        todayHighlight: true
+        });
+        // }).datepicker('update', new Date());
+
+        $("#datepicker3").datepicker({
+                        autoclose: true,
+                        todayHighlight: true
+        });
+        // }).datepicker('update', new Date());
+
+
+        /*--------------------------------------------------
+                    EDIT DATEPICKER JS
+        ---------------------------------------------------*/
+        $(function () {
+            $("#editdatepicker").datepicker({
+                    autoclose: true,
+                    todayHighlight: true
+            });
+
+            $("#editdatepicker2").datepicker({
+                autoclose: true,
+                todayHighlight: true
+            });
+
+            $("#editdatepicker3").datepicker({
+                    autoclose: true,
+                    todayHighlight: true
+            });
+
+        });
+
+
+        /*
+        |--------------------------------------------------------------------------
+        |   Toogle switch Js
+        |--------------------------------------------------------------------------
+        */
+        $('.cb-value').click(function() {
+                var mainParent = $(this).parent('.toggle-btn');
+
+                if($(mainParent).find('input.cb-value').is(':checked')) {
+                    $(mainParent).addClass('active');
+                } else {
+                    $(mainParent).removeClass('active');
+                }
+        });
+
+
+
+
+        /*
+        |---------------------------------------------------------------------
+        |		                     STATUS CHANGE
+        |----------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateStatus", function () {
+
+            let status = $(this).children("i").attr("status");
+            let item_id = $(this).attr("item-id");
+            let url = $(this).attr("item-url");
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{
+                    _token: '{!! csrf_token() !!}',
+                    status:status,
+                    item_id:item_id
+                },
+                success:function (response) {
+                    if (response['status'] == 0)
+                    {
+                        $("#id-"+item_id).html('<i class="fa fa-toggle-off" aria-hidden="true" status="Inactive" style="font-size: 18px; color: palevioletred;"></i>');
+                        successfull();
+
+                    }else if (response['status'] == 1)
+                    {
+                        $("#id-"+item_id).html('<i class="fa fa-toggle-on" aria-hidden="true" status="Active" style="font-size: 18px; color: forestgreen;"></i>');
+                        successfull();
+
+                    }
+                },error:function () {
+                    editError();
+                }
+            });
+        });
+
+
+
+        /*
+        |---------------------------------------------------------------------
+        |		              timepicker close button js
+        |----------------------------------------------------------------------
+        */
+        $('.time-close-btn').click(function() {
+            $('.timepicker_wrapper').hide();
+        });
+
+
+    </script>
+
+    
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("mychartContainer", {
+            animationEnabled: true,
+            theme: "light2",
+            title: {
+                text: "2022"
+            },
+            axisY: {
+                suffix: "Tk",
+                scaleBreaks: {
+                    autoCalculate: true
+                }
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "#,##0\"Tk\"",
+                indexLabel: "{y}",
+                indexLabelPlacement: "inside",
+                indexLabelFontColor: "white",
+                dataPoints: [{"label":"january","y":0},{"label":"january","y":0},{"label":"january","y":0},{"label":"january","y":0},{"label":"january","y":0},{"label":"january","y":0},{"label":"january","y":0},{"label":"january","y":5},{"label":"january","y":4},{"label":"january","y":3},{"label":"january","y":2},{"label":"january","y":1}]            }]
+        });
+        chart.render();
+
+        }
+
+
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Year', 'Sales', 'Expenses', 'Profit'],
+            ['2014', 1000, 400, 200],
+            ['2015', 1170, 460, 250],
+            ['2016', 660, 1120, 300],
+            ['2017', 1030, 540, 350]
+            ]);
+
+            var options = {
+            chart: {
+                    title: 'Company Performance',
+                    subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+            }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+
+
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart2);
+        function drawChart2() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Work',     11],
+                ['Eat',      2],
+                ['Commute',  2],
+                ['Watch TV', 2],
+                ['Sleep',    7]
+            ]);
+
+            var options = {
+                title: 'My Daily Activities',
+                pieHole: 0.4,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+
+	</script>
+
+
+    <script type="text/javascript">
+
+        $("#showsidenav, #showsidenav2").click(function(e){
+        e.preventDefault();
+        $("#sidenav").toggleClass("left");
+        $("#pageContent").toggleClass("active");
+        $("#topHeader").toggleClass("active");
+        });
+
+
+        $("#sidenav .list-item a").click(function(){
+        $(this).next().toggle('fast');
+        $(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
+        });
+
+        $("#btnPrint").click(function(){
+        printDiv("printSource");
+        });
+
+            /*----------------------------PRINT A DIV---------------------------------*/
+        function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+        }
+
+            /*----------------------------CHANGE DIV WITH AJAX----------------------------------*/
+        function search(url,divId) {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById(divId).innerHTML = this.responseText;
+            }
+            };
+            xmlhttp.open("GET",url, true);
+            xmlhttp.send();
+                }
+
+
+            /*----------------------------PRINT REPORT IN NEW PAGE----------------------------------*/
+        function printReport(url,id) {
+
+        var searchValue=document.getElementById(id).value;
+
+        if(searchValue==''){
+        searchValue='All';
+        }
+        url = url.replace('searchValue', searchValue);
+        alert(url)
+
+
+            $("<iframe>")                             // create a new iframe element
+                .css('visibility', 'hidden')                               // make it invisible
+                .attr("src", url) // point the iframe to the page you want to print
+                .appendTo("body");                    // add iframe to the DOM to cause it to load the page
+        }
+
+            /*----------------------------ADD MONEY----------------------------------*/
+
+            function Add_Money(addBalance,a,b,c){
+            document.getElementById(a).value='';
+            var currentBalance=document.getElementById(b).value;
+            var balance=parseFloat(currentBalance)+parseFloat(addBalance);
+            document.getElementById(c).value=balance;
+
+            }
+
+            /*----------------------------SUB MONEY----------------------------------*/
+            function Sub_Money(withdrawBalance,a,b,c){
+            document.getElementById(a).value='';
+            var currentBalance=document.getElementById(b).value;
+            var balance=parseFloat(currentBalance)-parseFloat(withdrawBalance);
+            document.getElementById(c).value=balance;
+            }
+            /*----------------------------ALERT DELETE----------------------------------*/
+            function alert_delete(btn,id,url){
+            var button=document.getElementById("confirmDelete");
+            button.addEventListener("click", function(){
+            deleteRow(btn,id,url);
+            });
+            }
+            /*----------------------------PERMENTLY DELETE FROM DATABASE----------------------------------*/
+            function deleteRow(btn,id,url) {
+                var row = btn.parentNode.parentNode;
+                row.parentNode.removeChild(row);
+                url = url.replace('id', id);
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                                                                                                    // document.getElementById(divId).innerHTML = this.responseText;
+                }
+                    };
+                xmlhttp.open("GET",url, true);
+                xmlhttp.send();
+                    }
+
+
+                    function clearAllData(id){
+                    document.getElementById(id).value = "";
+                    change_table(id);
+                    }
+    </script>
+
+
+</body>
+</html>
